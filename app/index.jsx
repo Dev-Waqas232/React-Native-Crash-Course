@@ -1,10 +1,10 @@
-import { Redirect, router } from 'expo-router';
+import { router } from 'expo-router';
 import { Image, ScrollView, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { StatusBar } from 'expo-status-bar';
 
 import { images } from '../constants';
 import CustomButton from '../components/CustomButton';
-import { StatusBar } from 'expo-status-bar';
 
 export default function App() {
   return (
@@ -45,7 +45,7 @@ export default function App() {
           />
         </View>
       </ScrollView>
-      <StatusBar backgroundColor="#161622" style="light" />
+      <StatusBar style="light" />
     </SafeAreaView>
   );
 }
